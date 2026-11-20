@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin – Warrior Barbershop</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0e0d0c">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body class="admin">
+
+  <!-- Login -->
+  <main class="login" data-login hidden>
+    <form class="login-card" data-login-form>
+      <img src="/assets/img/logo.png" alt="" width="84" height="84">
+      <h1>Warrior Admin</h1>
+      <div class="field">
+        <label for="password">Lösenord</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <p class="notice error" role="alert" data-login-error hidden></p>
+      <button class="btn btn-gold btn-block" type="submit">Logga in</button>
+    </form>
+  </main>
+
+  <!-- App -->
+  <div data-app hidden>
+    <header class="admin-bar">
+      <div class="container admin-bar-inner">
+        <a href="/" class="brand" title="Till webbplatsen">
+          <img src="/assets/img/logo.png" alt="" width="36" height="36">
+          <span class="brand-name">Warrior<small>Admin</small></span>
+        </a>
+        <nav class="tabs" role="tablist" aria-label="Admin">
+          <button role="tab" data-tab="bookings" aria-selected="true">Bokningar</button>
+          <button role="tab" data-tab="schedule" aria-selected="false">Schema</button>
+          <button role="tab" data-tab="services" aria-selected="false">Tjänster</button>
+        </nav>
+        <button class="btn btn-ghost btn-sm" type="button" data-logout>Logga ut</button>
+      </div>
+    </header>
+
+    <main class="container admin-main">
+      <section data-panel="bookings"></section>
+      <section data-panel="schedule" hidden></section>
+      <section data-panel="services" hidden></section>
+    </main>
+  </div>
+
+  <!-- Create / edit booking -->
+  <dialog class="modal" data-booking-dialog>
+    <form method="dialog" data-booking-form>
+      <h2 data-dialog-title>Ny bokning</h2>
+      <div class="form-grid">
+        <div class="field full">
+          <label for="b-service">Tjänst</label>
+          <select id="b-service" name="service_id" required></select>
+        </div>
+        <div class="field">
+          <label for="b-date">Datum</label>
+          <input id="b-date" name="date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="b-time">Tid</label>
+          <select id="b-time" name="time"></select>
+          <input id="b-custom" name="custom" type="time" step="300" hidden aria-label="Egen tid">
+        </div>
+        <label class="check full">
+          <input type="checkbox" name="use_custom"> Egen tid (även utanför öppettiderna)
+        </label>
+        <div class="field">
+          <label for="b-name">Namn</label>
+          <input id="b-name" name="customer_name" type="text" required maxlength="80">
+        </div>
+        <div class="field">
+          <label for="b-phone">Telefon <span>(valfritt)</span></label>
+          <input id="b-phone" name="phone" type="tel" maxlength="30">
+        </div>
+        <div class="field full">
+          <label for="b-email">E-post <span>(valfritt)</span></label>
+          <input id="b-email" name="email" type="email" maxlength="120">
+        </div>
+        <div class="field full">
+          <label for="b-note">Anteckning <span>(valfritt)</span></label>
+          <textarea id="b-note" name="note" maxlength="300" rows="2"></textarea>
+        </div>
+      </div>
+      <p class="notice error" role="alert" data-dialog-error hidden></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" type="button" data-dialog-close>Stäng</button>
+        <button class="btn btn-gold" type="submit" data-dialog-save>Spara</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+
+  <script src="/assets/js/booking-core.js" defer></script>
+  <script src="/assets/js/admin.js" defer></script>
+</body>
+</html>

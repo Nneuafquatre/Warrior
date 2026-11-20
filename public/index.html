@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Warrior Barbershop – Barberare på Södermalm, Stockholm</title>
+  <meta name="description" content="Warrior Barbershop på Långholmsgatan 11 i Stockholm. Skin fade, taper, design och skägg. Boka din tid direkt online.">
+  <meta name="theme-color" content="#0e0d0c">
+  <meta property="og:title" content="Warrior Barbershop – Stockholm">
+  <meta property="og:description" content="Skin fade, taper, design och skägg. Boka din tid direkt online.">
+  <meta property="og:image" content="/assets/img/logo.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/assets/img/gallery/cut-07.jpg">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+  <!-- Icons used across the page -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.500C5 14.900 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17" rx="4.500"/><circle cx="12" cy="12" r="4"/><circle cx="17.200" cy="6.800" r=".6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#boka">Hoppa till bokning</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Warrior Barbershop, till toppen">
+        <img src="/assets/img/logo.png" alt="" width="44" height="44">
+        <span class="brand-name">Warrior<small>Barbershop</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Huvudmeny" data-nav>
+        <a href="#tjanster">Tjänster</a>
+        <a href="#om">Om</a>
+        <a href="#galleri">Galleri</a>
+        <a href="#hitta">Hitta hit</a>
+        <a href="#boka" class="btn btn-gold nav-cta">Boka tid</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Öppna menyn" aria-expanded="false" aria-controls="nav" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-media" role="img" aria-label="Barberare klipper en kund i salongen"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow">Södermalm · Stockholm</p>
+        <h1>Skarpa fades.<br>Rena linjer.</h1>
+        <p class="hero-text">
+          Klippning, skägg och design av en barberare som kan alla hårtyper.
+          Ett fast pris – boka din tid direkt här på sidan.
+        </p>
+        <div class="hero-actions">
+          <a href="#boka" class="btn btn-gold btn-lg">Boka tid <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a href="#tjanster" class="btn btn-ghost btn-lg">Tjänster &amp; pris</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="hero-facts">
+          <li>
+            <svg class="icon"><use href="#i-pin"/></svg>
+            <div><strong>Långholmsgatan 11</strong><span>Hornstull, Stockholm</span></div>
+          </li>
+          <li>
+            <svg class="icon"><use href="#i-clock"/></svg>
+            <div><strong data-today-hours>Öppet alla dagar</strong><span>Se alla öppettider nedan</span></div>
+          </li>
+          <li>
+            <svg class="icon"><use href="#i-phone"/></svg>
+            <div><strong><a href="tel:+46764197098">076-419 70 98</a></strong><span>Ring eller boka online</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="tjanster">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Tjänster &amp; pris</p>
+          <h2>Ett pris. Allt ingår.</h2>
+          <p>Samma pris oavsett frisyr. Skulle något kosta extra får du veta det innan vi börjar.</p>
+        </header>
+
+        <div class="services" data-services>
+          <!-- Filled from the booking system; this is the fallback if it can't be reached -->
+          <article class="service-card">
+            <div>
+              <h3>Klippning</h3>
+              <p>Valfri frisyr. Skägg, ögonbryn och mustasch ingår.</p>
+            </div>
+            <div class="service-meta"><span class="price">200 kr</span><span>30 min</span></div>
+          </article>
+        </div>
+
+        <ul class="styles" aria-label="Det här gör vi">
+          <li>Skin fade</li><li>Taper</li><li>Design</li><li>Skägg</li><li>Ögonbryn</li><li>Mustasch</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-alt" id="om">
+      <div class="container about">
+        <figure class="about-photo">
+          <img src="/assets/img/stiven101.jpg" alt="Barberaren på Warrior klipper en kund" width="768" height="1024" loading="lazy">
+        </figure>
+        <div class="about-text">
+          <p class="eyebrow">Om Warrior</p>
+          <h2>En barberare. Full fokus på dig.</h2>
+          <p>
+            Hos Warrior sitter du alltid hos samma barberare. Med över sex års erfarenhet
+            av alla hårtyper får du en klippning som passar just dig – oavsett om du vill
+            ha en skarp skin fade, en mjuk taper eller en design i nacken.
+          </p>
+          <ul class="checks">
+            <li><svg class="icon"><use href="#i-check"/></svg>Över sex års erfarenhet</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Alla hårtyper och stilar</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Skägg och ögonbryn ingår i priset</li>
+          </ul>
+          <a href="#boka" class="btn btn-gold">Boka tid <svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="galleri">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Galleri</p>
+          <h2>Senaste klippningarna</h2>
+          <p>Ett urval av det som lämnat stolen. Fler bilder hittar du på Instagram.</p>
+        </header>
+
+        <div class="gallery" data-gallery>
+          <img src="/assets/img/gallery/cut-25.jpg" alt="Sidbena med fade och trimmat skägg" width="768" height="1024" loading="lazy">
+          <img src="/assets/img/gallery/cut-01.jpg" alt="Klassisk sidbena med skin fade" width="768" height="1024" loading="lazy">
+          <img src="/assets/img/gallery/cut-19.jpg" alt="Lockig topp med fade och rakad linje" width="768" height="1024" loading="lazy">
+          <img src="/assets/img/gallery/cut-14.jpg" alt="Kort fade med skarpa konturer och skägg" width="600" height="800" loading="lazy">
+          <img src="/assets/img/gallery/cut-17.jpg" alt="Texturerad topp med skin fade" width="768" height="1024" loading="lazy">
+          <img src="/assets/img/gallery/cut-09.jpg" alt="Låg fade med markerad skägglinje" width="768" height="1024" loading="lazy">
+          <img src="/assets/img/gallery/cut-20.jpg" alt="Fade med rakad design" width="768" height="1024" loading="lazy">
+          <img src="/assets/img/gallery/cut-12.jpg" alt="Naturlig klippning med trimmat skägg" width="768" height="1024" loading="lazy">
+          <img src="/assets/img/gallery/cut-02.jpg" alt="Taper fade i profil" width="768" height="1024" loading="lazy" data-extra hidden>
+          <img src="/assets/img/gallery/cut-15.jpg" alt="Sidbena med hög fade" width="600" height="800" loading="lazy" data-extra hidden>
+          <img src="/assets/img/gallery/cut-22.jpg" alt="Kort klippning med fade och skägg" width="768" height="1024" loading="lazy" data-extra hidden>
+          <img src="/assets/img/gallery/cut-26.jpg" alt="Bakåtkammat med skin fade" width="768" height="1024" loading="lazy" data-extra hidden>
+          <img src="/assets/img/gallery/cut-23.jpg" alt="Mohawk-fade med design" width="768" height="1024" loading="lazy" data-extra hidden>
+          <img src="/assets/img/gallery/cut-05.jpg" alt="Design i nacken" width="765" height="1020" loading="lazy" data-extra hidden>
+          <img src="/assets/img/gallery/cut-10.jpg" alt="Knut med fade och skägg" width="600" height="800" loading="lazy" data-extra hidden>
+          <img src="/assets/img/gallery/cut-24.jpg" alt="Kort fade med rakad triangel" width="768" height="1024" loading="lazy" data-extra hidden>
+        </div>
+
+        <div class="gallery-actions">
+          <button class="btn btn-ghost" type="button" data-gallery-more>Visa fler bilder</button>
+          <a class="btn btn-ghost" href="https://www.instagram.com/stiven_gbedoya10/" target="_blank" rel="noopener">
+            <svg class="icon"><use href="#i-insta"/></svg> Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section section-alt" id="boka">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Boka tid</p>
+          <h2>Välj en tid som passar</h2>
+          <p>Du betalar i salongen. Behöver du ändra tiden kan du boka om eller avboka via länken du får.</p>
+        </header>
+
+        <div class="booking" data-booking>
+          <noscript><p class="notice">Bokningen kräver JavaScript. Ring oss på 076-419 70 98 så bokar vi åt dig.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIND US -->
+    <section class="section" id="hitta">
+      <div class="container find">
+        <div>
+          <p class="eyebrow">Hitta hit</p>
+          <h2>Långholmsgatan 11</h2>
+          <p class="lead">Ett par minuter från Hornstulls tunnelbana på Södermalm.</p>
+          <ul class="contact-list">
+            <li><svg class="icon"><use href="#i-pin"/></svg>
+              <a href="https://www.google.com/maps/search/?api=1&query=L%C3%A5ngholmsgatan+11+Stockholm" target="_blank" rel="noopener">Långholmsgatan 11, Stockholm</a></li>
+            <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+46764197098">076-419 70 98</a></li>
+            <li><svg class="icon"><use href="#i-insta"/></svg>
+              <a href="https://www.instagram.com/stiven_gbedoya10/" target="_blank" rel="noopener">@stiven_gbedoya10</a></li>
+          </ul>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=L%C3%A5ngholmsgatan+11+Stockholm" target="_blank" rel="noopener">Öppna i kartan</a>
+        </div>
+
+        <div class="hours-card">
+          <h3>Öppettider</h3>
+          <table class="hours" data-hours>
+            <tbody>
+              <tr><th>Måndag – fredag</th><td>10:00 – 19:00</td></tr>
+              <tr><th>Lördag</th><td>11:00 – 17:00</td></tr>
+              <tr><th>Söndag</th><td>12:00 – 16:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#top" class="brand">
+        <img src="/assets/img/logo.png" alt="" width="40" height="40" loading="lazy">
+        <span class="brand-name">Warrior<small>Barbershop</small></span>
+      </a>
+      <p>Långholmsgatan 11, Stockholm · <a href="tel:+46764197098">076-419 70 98</a></p>
+      <p class="muted">© <span data-year>2026</span> Warrior Barbershop</p>
+    </div>
+  </footer>
+
+  <a href="#boka" class="mobile-cta btn btn-gold" data-mobile-cta>Boka tid</a>
+
+  <script src="/assets/js/booking-core.js" defer></script>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
